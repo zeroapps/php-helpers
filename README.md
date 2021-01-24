@@ -17,6 +17,30 @@ color_echo('Hi', 'green', 'white');
  -  string **$bg_color** (optional) one of: 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'light_gray', 'dark_gray', 'light_red', 'light_green', 'light_yellow', 'light_blue', 'light_magenta', 'light_cyan', 'white'
 
 
+### table_echo($table)
+Outputs 2-dimensional array as formatted table into CLI.
+
+```<?php
+table_echo([
+  ['Name', 'Price', 'Rating'],
+  ['Xiaomi phone', 'good', 'good'],
+  ['Apple phone', 'awful', 'great'],
+  ['Nokia', 'not available', 'not available']
+]);
+# --------------------------------------------------
+# | Name           | Price         | Rating        |
+# --------------------------------------------------
+# | Xiaomi phone   | good          | good          |
+# --------------------------------------------------
+# | Apple phone    | awful         | great         |
+# --------------------------------------------------
+# | Nokia          | not available | not available |
+# --------------------------------------------------
+```
+
+ -  array **$table** which is going to be outputted as table
+
+
 ## String functions
 ### random_name($include_last_name)
 Generates random string that looks like name, handy for creating test users.
@@ -26,7 +50,6 @@ Generates random string that looks like name, handy for creating test users.
 random_name(); # "Wesa"
 # get random first and last name
 random_name(true); # "Hybe Tolokyxi"
-($k + 1 ), 8 * ($k + 1));
 ```
 
  -  bool **$include_last_name** should last name be also generated

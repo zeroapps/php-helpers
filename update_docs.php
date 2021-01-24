@@ -27,7 +27,7 @@ function collect_docs($dir = null) {
       $function = preg_replace('/ = .+?\)/', ')', $function);
       
       $m = [];
-      preg_match_all('/ \* (.+)/', $code, $m);
+      preg_match_all('/ \* (.+)/', substr($code, 0, strpos($code, '*/')), $m);
       $description = '';
       $params = '';
       $example = '';
