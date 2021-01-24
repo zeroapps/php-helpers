@@ -33,13 +33,13 @@ function collect_docs($dir = null) {
       $example = '';
       foreach ( $m[1] as $line ) {
         if ( substr($line, 0, 1) == '@' ) {
-          $params .= ' - ' . $line . "\n";
+          $params .= ' - ' . preg_replace('/(\$[a-z0-9_]+)/', '**$1**', str_replace('@param', '', $line)) . "\n";
         }
         else if ( substr($line, 0, 6) == '<code>' ) {
           $example = '```<?php' . "\n";
         }
         else if ( substr($line, 0, 7) == '</code>' ) {
-          $example .= '?>';
+          $example .= '';
         }
         else {
           if ( $example ) {
