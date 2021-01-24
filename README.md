@@ -58,7 +58,7 @@ cache('test', null, 60);
 
  -  string **$key** get data by this key from cache
  -  string **$value** (optional) if this is not null, **$value** will be stored to **$key** cache
- -  string **$ttl** (optional) specifies expiration in seconds (used only while reading data)
+ -  int **$ttl** (optional) specifies expiration in seconds (used only while reading data)
 
 
 

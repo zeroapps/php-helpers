@@ -16,7 +16,7 @@
  *
  * @param string $key get data by this key from cache
  * @param string $value (optional) if this is not null, $value will be stored to $key cache
- * @param string $ttl (optional) specifies expiration in seconds (used only while reading data)
+ * @param int $ttl (optional) specifies expiration in seconds (used only while reading data)
  */
 
 function cache($key, $value = null, $ttl = 3600) {
