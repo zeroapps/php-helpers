@@ -69,6 +69,11 @@ random_string(16);
 
 
 ## Web functions
+### go_back()
+Redirect to a previous (referrer) page
+
+
+
 ### redirect($url, $code)
 Redirect to a given URL
 
