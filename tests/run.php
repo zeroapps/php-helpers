@@ -49,11 +49,3 @@ function load_all_functions($dir = null) {
 # get all tests
 load_all_functions();
 run_all_tests();
-
-
-table_echo([
-  ['Name', 'Price', 'Rating'],
-  ['Xiaomi phone', 'good', 'good'],
-  ['Apple phone', 'awful', 'great'],
-  ['Nokia', 'not available', 'not available']
-]);
