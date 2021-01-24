@@ -10,7 +10,6 @@ You can specify text and/or background color.
 ```<?php
 # print green text on white background
 color_echo('Hi', 'green', 'white');
-
 ```
 
  -  string **$message** text to output
@@ -26,7 +25,6 @@ By default symbols are [0...9a-zA-Z]
 ```<?php
 # get random alphanumeric string of 16 characters
 random_string(16);
-
 ```
 
  -  int **$length** size of generated string

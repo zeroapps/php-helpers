@@ -52,7 +52,7 @@ function collect_docs($dir = null) {
       }
       
       if ( $example ) {
-        $example .= "\n" . '```' . "\n\n";
+        $example .= '```' . "\n\n";
       }
       
       $docs .= '### ' . $function . "\n" .
