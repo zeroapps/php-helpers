@@ -3,6 +3,11 @@
 /**
  * Outputs colored message into CLI.
  * You can specify text and/or background color.
+ * 
+ * <code>
+ * # print green text on white background
+ * color_echo('Hi', 'green', 'white');
+ * </code>
  *
  * @param string $message text to output
  * @param string $text_color (optional) one of: 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'light_gray', 'dark_gray', 'light_red', 'light_green', 'light_yellow', 'light_blue', 'light_magenta', 'light_cyan', 'white'

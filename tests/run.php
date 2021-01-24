@@ -39,12 +39,9 @@ function load_all_functions($dir = null) {
   $root = __DIR__ . '/../lib';
   if ( !$dir ) $dir = $root;
   
-  $tree = [];
   foreach ( glob($dir . '/*') as $node ) {
     is_dir($node) ? load_all_functions($node) : (include $node);
   }
-  
-  return $tree;
 }
 
 
