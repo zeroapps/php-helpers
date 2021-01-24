@@ -3,7 +3,7 @@
 /**
  * Redirect to a given URL
  * 
-  * <code>
+ * <code>
  * # redirect browser to google
  * redirect('https://google.com/');
  * </code>
