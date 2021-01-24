@@ -14,7 +14,7 @@ function collect_docs($dir = null) {
   
   foreach ( glob($dir . '/*') as $node ) {
     if ( is_dir($node) ) {
-      $docs .= '## ' . ucfirst(basename($node)) . ' functions' . "\n";
+      $docs .= "\n" . '# ' . ucfirst(basename($node)) . ' functions' . "\n";
       $docs .= collect_docs($node);
     }
     else {
@@ -55,7 +55,7 @@ function collect_docs($dir = null) {
         $example .= '```' . "\n\n";
       }
       
-      $docs .= '### ' . $function . "\n" .
+      $docs .= '## ' . $function . "\n" .
                $description . "\n" .
                $example .
                $params .

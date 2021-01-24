@@ -2,8 +2,9 @@
 
 This is a collection of all kind of php helper functions.
 
-## Cli functions
-### color_echo($message, $text_color, $bg_color)
+
+# Cli functions
+## color_echo($message, $text_color, $bg_color)
 Outputs colored message into CLI.
 You can specify text and/or background color.
 
@@ -17,7 +18,7 @@ color_echo('Hi', 'green', 'white');
  -  string **$bg_color** (optional) one of: 'black', 'red', 'green', 'yellow', 'blue', 'magenta', 'cyan', 'light_gray', 'dark_gray', 'light_red', 'light_green', 'light_yellow', 'light_blue', 'light_magenta', 'light_cyan', 'white'
 
 
-### table_echo($table)
+## table_echo($table)
 Outputs 2-dimensional array as formatted table into CLI.
 
 ```<?php
@@ -41,8 +42,9 @@ table_echo([
  -  array **$table** which is going to be outputted as table
 
 
-## String functions
-### random_name($include_last_name)
+
+# String functions
+## random_name($include_last_name)
 Generates random string that looks like name, handy for creating test users.
 
 ```<?php
@@ -55,7 +57,7 @@ random_name(true); # "Hybe Tolokyxi"
  -  bool **$include_last_name** should last name be also generated
 
 
-### random_string($length, $characters)
+## random_string($length, $characters)
 Generates random string from given set of symbols.
 By default symbols are [0...9a-zA-Z]
 
@@ -68,13 +70,14 @@ random_string(16);
  -  string **$characters** (optional) set of symbols to generate a string from
 
 
-## Web functions
-### go_back()
+
+# Web functions
+## go_back()
 Redirect to a previous (referrer) page
 
 
 
-### redirect($url, $code)
+## redirect($url, $code)
 Redirect to a given URL
 
 ```<?php
