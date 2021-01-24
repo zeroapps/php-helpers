@@ -43,6 +43,25 @@ table_echo([
 
 
 
+# Db functions
+## [cache($key, $value, $ttl)](lib/db/cache.php)
+Single function cache implementation based on files (located in /tmp folder)
+
+```<?php
+# cache "12" value in "test" key
+cache('test', "12");
+# get cached data by "test" key
+cache('test');
+# get cached data by "test" key using 60 seconds ttl
+cache('test', null, 60);
+```
+
+ -  string **$key** get data by this key from cache
+ -  string **$value** (optional) if this is not null, **$value** will be stored to **$key** cache
+ -  string **$ttl** (optional) specifies expiration in seconds (used only while reading data)
+
+
+
 # String functions
 ## [random_name($include_last_name)](lib/string/random_name.php)
 Generates random string that looks like name, handy for creating test users.
