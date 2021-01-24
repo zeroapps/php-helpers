@@ -55,7 +55,9 @@ function collect_docs($dir = null) {
         $example .= '```' . "\n\n";
       }
       
-      $docs .= '## ' . $function . "\n" .
+      $relative_path = str_replace($root . '/', '', $node);
+      
+      $docs .= '## ' . '[' . $function . '](' . $relative_path . ')' . "\n" .
                $description . "\n" .
                $example .
                $params .
