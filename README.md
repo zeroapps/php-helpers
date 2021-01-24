@@ -18,6 +18,20 @@ color_echo('Hi', 'green', 'white');
 
 
 ## String functions
+### random_name($include_last_name)
+Generates random string that looks like name, handy for creating test users.
+
+```<?php
+# get random first name
+random_name(); # "Wesa"
+# get random first and last name
+random_name(true); # "Hybe Tolokyxi"
+($k + 1 ), 8 * ($k + 1));
+```
+
+ -  bool **$include_last_name** should last name be also generated
+
+
 ### random_string($length, $characters)
 Generates random string from given set of symbols.
 By default symbols are [0...9a-zA-Z]
