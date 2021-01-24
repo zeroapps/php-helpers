@@ -31,3 +31,16 @@ random_string(16);
  -  string **$characters** (optional) set of symbols to generate a string from
 
 
+## Web functions
+### redirect($url, $code)
+Redirect to a given URL
+
+```<?php
+# redirect browser to google
+redirect('https://google.com/');
+```
+
+ -  string **$url** absolute or relative url to redirect to
+ -  string **$code** (optional) HTTP type of redirect (301 or 302)
+
+
