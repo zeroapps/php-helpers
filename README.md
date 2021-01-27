@@ -2,6 +2,25 @@
 
 This is a collection of all kind of php helper functions.
 
+# Installation
+
+This repo is intended to be a copy-paste source, so just copy functions you need to your project.
+
+Alternatively:
+
+1. Clone
+```
+git clone https://github.com/zeroapps/php-helpers.git
+```
+
+2. Include functions you need in your php script:
+```
+include 'php-helpers/cli/color_echo.php';
+include 'php-helpers/cli/table_echo.php';
+
+color_echo('Hi!', 'green');
+```
+
 
 # Cli functions
 ## [color_echo($message, $text_color, $bg_color)](lib/cli/color_echo.php)
@@ -126,5 +145,3 @@ redirect('https://google.com/');
 
  -  string **$url** absolute or relative url to redirect to
  -  string **$code** (optional) HTTP type of redirect (301 or 302)
-
-

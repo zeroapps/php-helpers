@@ -12,7 +12,7 @@
  * #    "\/tmp\/tree\/folder": {
  * #      "\/tmp\/tree\/folder\/file1.txt": null
  * #    },
- * #   "\/tmp\/tree\/image2.png": null
+ * #    "\/tmp\/tree\/image2.png": null
  * #  }
  *
  * </code>
