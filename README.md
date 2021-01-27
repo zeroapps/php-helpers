@@ -70,6 +70,10 @@ Get list of files/dirs inside a specified dir and return it as array
 $tree = file_tree('/tmp/tree'); # some folder to build a tree from
 echo json_encode($tree, JSON_PRETTY_PRINT);
 #  {
+     "\/tmp\/tree\/folder": {
+       "\/tmp\/tree\/folder\/file1.txt": null
+     },
+   "\/tmp\/tree\/image2.png": null
 #  }
 ```
 

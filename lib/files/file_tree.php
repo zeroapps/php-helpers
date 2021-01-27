@@ -8,10 +8,10 @@
  * echo json_encode($tree, JSON_PRETTY_PRINT);
  * 
  * #  {
-        "\/tmp\/tree\/folder": {
-          "\/tmp\/tree\/folder\/file1.txt": null
-        },
-      "\/tmp\/tree\/image2.png": null
+ *      "\/tmp\/tree\/folder": {
+ *        "\/tmp\/tree\/folder\/file1.txt": null
+ *      },
+ *    "\/tmp\/tree\/image2.png": null
  * #  }
  *
  * </code>
