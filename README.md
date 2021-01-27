@@ -62,6 +62,21 @@ cache('test', null, 60);
 
 
 
+# Files functions
+## [file_tree($dir)](lib/files/file_tree.php)
+Get list of files/dirs inside a specified dir and return it as array
+
+```<?php
+$tree = file_tree('/tmp/tree'); # some folder to build a tree from
+echo json_encode($tree, JSON_PRETTY_PRINT);
+#  {
+#  }
+```
+
+ -  string **$dir** directory to buld a tree from
+
+
+
 # String functions
 ## [random_name($include_last_name)](lib/string/random_name.php)
 Generates random string that looks like name, handy for creating test users.
