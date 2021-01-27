@@ -1,17 +1,18 @@
 <?php
 
 /**
- * Get list of files/dirs inside a specified dir and return it as array
+ * Get list of files/dirs inside a specified dir and return it as array keys:
+ * [ file1 => null, folder1 => [ file2 => null ], ...]
  * 
  * <code>
  * $tree = file_tree('/tmp/tree'); # some folder to build a tree from
  * echo json_encode($tree, JSON_PRETTY_PRINT);
  * 
  * #  {
- *      "\/tmp\/tree\/folder": {
- *        "\/tmp\/tree\/folder\/file1.txt": null
- *      },
- *    "\/tmp\/tree\/image2.png": null
+ * #    "\/tmp\/tree\/folder": {
+ * #      "\/tmp\/tree\/folder\/file1.txt": null
+ * #    },
+ * #   "\/tmp\/tree\/image2.png": null
  * #  }
  *
  * </code>
