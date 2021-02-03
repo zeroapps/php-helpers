@@ -2,25 +2,6 @@
 
 This is a collection of all kind of php helper functions.
 
-# Installation
-
-This repo is intended to be a copy-paste source, so just copy functions you need to your project.
-
-Alternatively:
-
-1. Clone
-```
-git clone https://github.com/zeroapps/php-helpers.git
-```
-
-2. Include functions you need in your php script:
-```
-include 'php-helpers/cli/color_echo.php';
-include 'php-helpers/cli/table_echo.php';
-
-color_echo('Hi!', 'green');
-```
-
 
 # Cli functions
 ## [color_echo($message, $text_color, $bg_color)](lib/cli/color_echo.php)
@@ -93,7 +74,7 @@ echo json_encode($tree, JSON_PRETTY_PRINT);
 #    "\/tmp\/tree\/folder": {
 #      "\/tmp\/tree\/folder\/file1.txt": null
 #    },
-#   "\/tmp\/tree\/image2.png": null
+#    "\/tmp\/tree\/image2.png": null
 #  }
 ```
 
@@ -102,6 +83,19 @@ echo json_encode($tree, JSON_PRETTY_PRINT);
 
 
 # String functions
+## [csv_to_array($text, $separator,' , $enclosure, $escape)](lib/string/csv_to_array.php)
+Parses string as set of CSV lines and returned 2-dimensional array
+
+```<?php
+csv_to_array("1,2\n3,4\n,5,6");
+```
+
+ -  String **$text** CSV data in text format
+ -  String **$separator** Set the field delimiter (one character only).
+ -  String **$enclosure** Set the field enclosure character (one character only).
+ -  String **$escape** Set the escape character (at most one character).
+
+
 ## [random_name($include_last_name)](lib/string/random_name.php)
 Generates random string that looks like name, handy for creating test users.
 
@@ -145,3 +139,5 @@ redirect('https://google.com/');
 
  -  string **$url** absolute or relative url to redirect to
  -  string **$code** (optional) HTTP type of redirect (301 or 302)
+
+
